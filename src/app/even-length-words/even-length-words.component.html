@@ -1,0 +1,8 @@
+<input type="text" class="form-control" (input)="onEvenLengthCheck($event)"/>
+@if (this.evenLengthCheck == 0) {
+    <span class="text-danger">Word length is Even!</span>
+    } @else {
+    <span class="text-bg-info p-2 text-truncate">  
+        {{ wordLength }}
+    </span>
+}
