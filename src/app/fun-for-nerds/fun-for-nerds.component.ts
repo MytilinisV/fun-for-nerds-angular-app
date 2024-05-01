@@ -11,7 +11,8 @@ import { EvenLengthWordsComponent } from '../even-length-words/even-length-words
 export class FunForNerdsComponent {
   
   userInput: string;
-  wordLength: Number = 0;
+  wordLength: number = 0;
+  numberCheck: number = 0;
   // static wordLength: number;
 
   onUserInput(event: Event) {
@@ -19,5 +20,6 @@ export class FunForNerdsComponent {
     this.userInput = value;
     this.wordLength = this.userInput.length;
     // console.log(`${value} ${value.length}`);
+    this.numberCheck = this.wordLength % 2;
   }
 }

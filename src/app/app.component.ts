@@ -9,7 +9,7 @@ import { OddLengthWordsComponentComponent } from './odd-length-words-component/o
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
-    imports: [RouterOutlet, FunForNerdsComponent, EvenLengthWordsComponent, OddLengthWordsComponentComponent, FunForNerdsComponent]
+    imports: [RouterOutlet, FunForNerdsComponent, EvenLengthWordsComponent, OddLengthWordsComponentComponent, FunForNerdsComponent],
 })
 export class AppComponent {
   title = 'fun-for-nerds-angular-app';
