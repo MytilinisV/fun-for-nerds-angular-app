@@ -1,8 +1,7 @@
-<!-- @if (numberCheck == 0) {
-    <span class="text-danger">Word length is Even!</span>
+@if (evenWords.length ) {
+    <span class="text-danger"> {{ evenWord }}</span>
     } @else {
-    <span class="text-bg-info p-2 text-truncate">  
-        {{ wordLength }}
+    <span class="text-danger ">  
+        {{ evenWord }}
     </span>
-} -->
-<app-fun-for-nerds></app-fun-for-nerds>
+}

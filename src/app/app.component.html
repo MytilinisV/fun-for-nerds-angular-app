@@ -1,13 +1,9 @@
-<div class="container text-center">
-
-<app-fun-for-nerds>
-    <div class="bg-info mt-5 mb-0 container text-center">
-        <h4>Fun for Nerds</h4>
-      </div>
-      <div class="row container ">
-        <input type="text" class="form-control col me-2 " (input)="($event)"/>
-        <button type="button" class="btn btn-primary col-2" (click)="onUserInput($event)" id="button">Submit</button>
-      </div>
-</app-fun-for-nerds>
-
+<div class="container mt-5 ">
+    <div class="d-flex flex-column gap-2">
+        <div class="alert alert-primary text-center fw-bold ">Fun for Nerds</div>
+            <app-fun-for-nerds>
+                {{evenLengthWords}}
+                {{oddLengthWords}}
+            </app-fun-for-nerds>
+        </div>
 </div>

@@ -1,10 +1,8 @@
 <div class="d-flex flex-column gap-3 container w-50 align-items-center ">
-  <div class="bg-info mt-5 mb-0 container text-center">
-    <h4>Fun for Nerds</h4>
-  </div>
   <div class="row container ">
     <input type="text" class="form-control col me-2 " (input)="onUserInput($event)"/>
-    <button type="button" class="btn btn-primary col-2" (click)="onUserInput($event)" id="button">Submit</button>
+    <button type="button" class="btn btn-primary col-2" (click)="onWordSubmit()" id="button">Submit</button>
+    <span>{{onWordSubmit()}}</span>
   </div>
     @if (!userInput) {
       <span class="text-danger">No user input!</span>
