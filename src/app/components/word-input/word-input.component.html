@@ -1,0 +1,24 @@
+<div class="d-flex flex-column gap-3 container align-items-center col-10 ">
+  <div class="row container">
+    <input 
+      type="text"
+      class="form-control col me-2"
+      (input)="onUserInput($event)"
+      (keyup.enter)="onWordSubmitted()"/>
+    <button 
+      (click)="onWordSubmitted()" 
+      (keyup.enter)="onWordSubmitted()"
+      class="btn btn-primary col-4 ">
+      Submit
+    </button>
+  </div>
+  @if (!userInput) {
+    <span class="text-danger">No user input!</span>
+  } @else if (userInput) {
+    <span class="">
+      Word length is: {{ userInput.length }}
+    </span>
+  }     
+</div>
+
+

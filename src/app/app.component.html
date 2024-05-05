@@ -1,13 +1,24 @@
-<div class="container mt-5 ">
-    <div class="d-flex flex-column gap-2">
-        <div class="alert alert-primary text-center fw-bold ">FUN FOR NERDS</div>
-        <!-- <word-input>
-                        
-        </word-input> -->
-        <div>
-            <!-- <app-even-length-words >
-            </app-even-length-words> -->
+<div class="container ">
+    <div class="d-flex flex-column gap-3">
+        <div class="alert alert-primary text-center align-content-center text-center fw-bold col">Fun for Nerds</div>
+            <word-input
+                class="col"
+                (partialWord)="onPartialWord($event)"
+                (wordSubmitted)="onWord($event)">                        
+            </word-input>
+            <div class="alert alert-primary d-flex flex-column container text-center ">
+                <div class="row container col-12">
+                    <app-even-length-words
+                        class="col-6"
+                        [partialWord]="partialEvenWord"
+                        [manyWords]="evenLengthWords">
+                    </app-even-length-words>
+                    <app-odd-length-words
+                        class="col-6"
+                        [partialWord]="partialOddWord"
+                        [manyWords]="oddLengthWords">
+                    </app-odd-length-words>
+                </div>
+            </div>
         </div>
-<app-fun-for-nerds></app-fun-for-nerds>
-    </div>
 </div>

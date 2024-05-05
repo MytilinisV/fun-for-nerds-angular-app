@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FunForNerdsComponent } from './fun-for-nerds.component';
+import { OddLengthWordsComponent } from './odd-length-words.component';
 
-describe('FunForNerdsComponent', () => {
-  let component: FunForNerdsComponent;
-  let fixture: ComponentFixture<FunForNerdsComponent>;
+describe('OddLengthWordsComponent', () => {
+  let component: OddLengthWordsComponent;
+  let fixture: ComponentFixture<OddLengthWordsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [FunForNerdsComponent]
+      imports: [OddLengthWordsComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(FunForNerdsComponent);
+    fixture = TestBed.createComponent(OddLengthWordsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

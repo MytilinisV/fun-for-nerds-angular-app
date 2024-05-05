@@ -1,8 +1,12 @@
-<input type="text" class="form-control" (input)="onEvenLengthCheck($event)"/>
-@if (this.evenLengthCheck == 0) {
-    <span class="text-danger">Word length is Even!</span>
+<div class=" text-primary ">Even Length Words</div>
+@if (partialWord.length > 0) {
+    <span class="text-danger"> {{partialWord}} </span>
+    <br />
+}
+@if (!manyWords.length) {
+    <span class="text-danger" >There are no even length words</span>
     } @else {
-    <span class="text-bg-info p-2 text-truncate">  
-        {{ wordLength }}
-    </span>
+        @for (word of manyWords; track word) {
+            {{ word }} <br />
+        }
 }
