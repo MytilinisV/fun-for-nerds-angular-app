@@ -1,9 +1,16 @@
 <div class="container mt-5 ">
     <div class="d-flex flex-column gap-2">
         <div class="alert alert-primary text-center fw-bold ">Fun for Nerds</div>
-            <app-fun-for-nerds>
-                {{evenLengthWords}}
-                {{oddLengthWords}}
-            </app-fun-for-nerds>
+            <word-input>
+                        
+            </word-input>
+            <div>
+                <app-even-length-words 
+                [data]="evenLengthWords">
+                </app-even-length-words>
+                <app-odd-length-words>
+
+                </app-odd-length-words>
+            </div>
         </div>
 </div>

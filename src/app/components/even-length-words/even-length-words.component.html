@@ -1,7 +1,8 @@
-@if (evenWords.length ) {
-    <span class="text-danger"> {{ evenWord }}</span>
+<div>Even Words</div>
+@if (currentEvenWord % 2 == 0 ) {
+    <span class="text-danger" >{{ wordSubmitted }}</span>
     } @else {
     <span class="text-danger ">  
-        {{ evenWord }}
+        There are no even words
     </span>
 }

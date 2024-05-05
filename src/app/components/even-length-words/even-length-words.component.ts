@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { FunForNerdsComponent } from '../fun-for-nerds/fun-for-nerds.component';
+import { manyWords } from '../interface/many-words';
 
 @Component({
   selector: 'app-even-length-words',
@@ -9,6 +9,13 @@ import { FunForNerdsComponent } from '../fun-for-nerds/fun-for-nerds.component';
   styleUrl: './even-length-words.component.css'
 })
 export class EvenLengthWordsComponent {
-  @Input() evenLengthWords: string [];
-  @Input() evenWord = '';
+  // evenWords: string;
+  @Input() wordSubmitted: [];
+  @Input() newWord: '';
+  
+  // evenWords: manyWords;
+  // evenWordAdd: string;
+  // wordLength: number;
+
+
 }

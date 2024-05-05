@@ -1,8 +1,8 @@
 <div class="d-flex flex-column gap-3 container w-50 align-items-center ">
   <div class="row container ">
-    <input type="text" class="form-control col me-2 " (input)="onUserInput($event)"/>
-    <button type="button" class="btn btn-primary col-2" (click)="onWordSubmit()" id="button">Submit</button>
-    <span>{{onWordSubmit()}}</span>
+    <input class="form-control col me-2 " (input)="onUserInput($event)"/>
+    <button (click)="onWordSubmitted()" class="btn btn-primary col-2" id="button">Submit</button>
+    
   </div>
     @if (!userInput) {
       <span class="text-danger">No user input!</span>
@@ -11,7 +11,7 @@
         User Input is: {{ userInput }}
       </span>
     }
-    <div class="container">
+    <!-- <div class="container">
       @if (wordLength != 0) {
         <div class="row align-items-start">
         @if (numberCheck == 0) {
@@ -24,7 +24,6 @@
         </div >
 
       }
-    </div>
-
+    </div> -->
 </div>
 

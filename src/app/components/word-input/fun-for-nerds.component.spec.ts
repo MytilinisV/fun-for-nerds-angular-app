@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FunForNerdsComponent } from './fun-for-nerds.component';
+import { WordInputComponent } from './word-input.component';
 
-describe('FunForNerdsComponent', () => {
-  let component: FunForNerdsComponent;
-  let fixture: ComponentFixture<FunForNerdsComponent>;
+describe('WordInputComponent', () => {
+  let component: WordInputComponent;
+  let fixture: ComponentFixture<WordInputComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [FunForNerdsComponent]
+      imports: [WordInputComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(FunForNerdsComponent);
+    fixture = TestBed.createComponent(WordInputComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
