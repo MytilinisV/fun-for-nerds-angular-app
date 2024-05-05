@@ -18,7 +18,7 @@ export class WordInputComponent {
 
   onUserInput(event: Event) {
     const input = (event.target as HTMLInputElement);
-    this.userInput = input.value;
+    this.userInput = input.value.trim();
     this.partialWord.emit(input.value);
   }
 

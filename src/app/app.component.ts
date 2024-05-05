@@ -29,6 +29,7 @@ export class AppComponent {
   }
 
   onPartialWord(word: string) {
+    word = word.trim()
     if (word.length % 2 === 0) {
       this.partialEvenWord = word;
       this.partialOddWord = '';
