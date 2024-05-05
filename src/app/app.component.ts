@@ -13,29 +13,28 @@ import { manyWords } from './components/interface/many-words';
 })
 export class AppComponent {
   title = 'fun-for-nerds-angular-app';
-  partialOddWord: string;
-  partialEvenWord: string;
+  partialOddWord = '';
+  partialEvenWord = '';
 
-  oddLengthWords: string [];
-  evenLengthWords: string [];
+  oddLengthWords: string [] = [];
+  evenLengthWords: string [] = [];
 
   onWord(word: string) {
     if (word.length % 2 === 0) { {
-      word = this.partialEvenWord
+      this.evenLengthWords.push(word)
       }   
     } else {
-      word = this.partialOddWord
+      this.oddLengthWords.push(word)
     }
   }
 
   onPartialWord(word: string) {
     if (word.length % 2 === 0) {
-      // const value = (event.target as HTMLInputElement).value;
-      // word = value
-      this.evenLengthWords[word] = word
-      console.log('word')
+      this.partialEvenWord = word;
+      this.partialOddWord = '';
     } else {
-      this.oddLengthWords[word] = word
+      this.partialOddWord = word;
+      this.partialEvenWord = '';
     }
   }
 }

@@ -10,8 +10,8 @@ import { manyWords } from '../interface/many-words';
 })
 export class EvenLengthWordsComponent {
   // evenWords: string;
-  @Input() wordSubmitted: [];
-  @Input() newWord: '';
+  @Input() manyWords: string[] = [];
+  @Input() partialWord: string = '';
   
   // evenWords: manyWords;
   // evenWordAdd: string;

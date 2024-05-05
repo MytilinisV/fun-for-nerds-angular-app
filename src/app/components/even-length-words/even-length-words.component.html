@@ -1,8 +1,12 @@
-<div>Even Words</div>
-@if (currentEvenWord % 2 == 0 ) {
-    <span class="text-danger" >{{ wordSubmitted }}</span>
+<div class=" text-primary ">Even Length Words</div>
+@if (partialWord.length > 0) {
+    <span class="text-danger"> {{partialWord}} </span>
+    <br />
+}
+@if (!manyWords.length) {
+    <span class="text-danger" >There are no even length words</span>
     } @else {
-    <span class="text-danger ">  
-        There are no even words
-    </span>
+        @for (word of manyWords; track word) {
+            {{ word }} <br />
+        }
 }

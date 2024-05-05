@@ -1,1 +1,12 @@
-<p>odd-length-words works!</p>
+<div class=" text-primary ">Odd Length Words</div>
+@if (partialWord.length > 0) {
+    <span class="text-danger"> {{partialWord}}</span>
+    <br />
+}
+@if (!manyWords.length) {
+    <span class="text-danger" >There are no odd length words</span>
+    } @else {
+        @for (word of manyWords; track word) {
+            {{ word }} <br />
+        }
+}
